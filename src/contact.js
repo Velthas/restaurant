@@ -24,9 +24,9 @@ const generateContactDivs = (function () {
         const email = document.createElement('li');
         const fakeSocial = document.createElement('li');
 
-        telefonNummer.textContent = "+39 331 332 3355"
-        email.textContent = "totallynotafakeemail@coffeehouse.com"
-        fakeSocial.textContent = "Find us on Facebook at https://totallynotfakeurl/home/troll"
+        telefonNummer.innerHTML = "<strong>Cellphone</strong>: +39 331 332 3355"
+        email.innerHTML = "<strong>Mail</strong>: totallynotafakeemail@coffeehouse.com"
+        fakeSocial.innerHTML = "<strong>Facebook</strong>: https://totallynotfakeurl/home/troll"
 
         const listElements = [ telefonNummer, email, fakeSocial]
         listElements.forEach(contact => {
@@ -50,7 +50,7 @@ const generateContactDivs = (function () {
 
     }
 
-    return { appendContacts }
+    return { appendContacts, clearPage, createOuterContainers }
 
 })();
 

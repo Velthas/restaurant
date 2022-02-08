@@ -2,6 +2,7 @@
 import './style.css';
 import generateMenuDivs from './menu.js';
 import generateContactDivs from './contact.js';
+import generateHomeDivs from './home.js'
 
 
 const enableTabSwap = (function () {
@@ -12,8 +13,13 @@ const enableTabSwap = (function () {
     const contactsOption = navBar.querySelector('#summonContacts');
     const homeOption = navBar.querySelector('#summonHome');
 
-    menuOption.addEventListener('click', generateMenuDivs.appendToMenu)
-    contactsOption.addEventListener('click', generateContactDivs.appendContacts)
+    function assignEvents() {
+    menuOption.addEventListener('click', generateMenuDivs.appendToMenu);
+    contactsOption.addEventListener('click', generateContactDivs.appendContacts);
+    homeOption.addEventListener('click', generateHomeDivs.appendHomeDivs);
+    }
+
+    assignEvents();
 
 
 })();
