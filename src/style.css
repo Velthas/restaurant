@@ -143,10 +143,6 @@ p.information {
         width: 80vw;
     }
 
-    #navbar {
-        justify-content: space-between;
-    }
-
     #navbar li {
         font-size: 0.75rem;
         margin: 2px;
