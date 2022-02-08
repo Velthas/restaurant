@@ -1,4 +1,7 @@
 # Restaurant
+
+# Live at: https://velthas.github.io/restaurant/
+
 'Restaurant' is a front-end project that allowed me to appreciate the beauty of dynamic table swapping through usage of JavaScript, something I had not attempted before now. 
 
 Perhaps more importantly, this was also my first experience with the most cryptic webpack. Understandably, these tools are difficult to use but I can already see the benefits and hope to make them an important part of my toolset for years to come.
