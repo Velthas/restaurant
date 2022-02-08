@@ -7,7 +7,6 @@
 
 body {
     background-color: #000;
-    height: 120vh;
 }
 
 #coffeehero {
@@ -136,4 +135,43 @@ p.information {
 
 #footer a:hover {
     color: #6e4821
+}
+
+@media screen and (max-width: 450px) {
+
+    #menu {
+        width: 80vw;
+    }
+
+    #navbar {
+        justify-content: space-between;
+    }
+
+    #navbar li {
+        font-size: 0.75rem;
+        margin: 2px;
+    }
+
+    .menuitem p,
+    .menuitem h3,
+    p.information,
+    .menutitle,
+    .herotext,
+    h1 {
+        font-size: 1rem;
+    }
+
+    #footer {
+        font-size: 0.80rem;
+    }
+
+    #contents #menu .menuitem img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .menuitem {
+        width: 180px;
+        height: 250px;
+    }
 }
